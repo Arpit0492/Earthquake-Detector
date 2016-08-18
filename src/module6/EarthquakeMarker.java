@@ -6,10 +6,7 @@ import processing.core.PGraphics;
 
 /** Implements a visual marker for earthquakes on an earthquake map
  * 
- * @author UC San Diego Intermediate Software Development MOOC team
- *
  */
-// TODO: Implement the comparable interface
 public abstract class EarthquakeMarker extends CommonMarker
 {
 	
@@ -55,9 +52,6 @@ public abstract class EarthquakeMarker extends CommonMarker
 		this.radius = 1.75f*getMagnitude();
 	}
 	
-	// TODO: Add the method:
-	// public int compareTo(EarthquakeMarker marker)
-	
 	
 	// calls abstract method drawEarthquake and then checks age and draws X if needed
 	@Override
@@ -71,7 +65,7 @@ public abstract class EarthquakeMarker extends CommonMarker
 		// call abstract method implemented in child class to draw marker shape
 		drawEarthquake(pg, x, y);
 		
-		// IMPLEMENT: add X over marker if within past day		
+		// Adding X over marker if within past day		
 		String age = getStringProperty("age");
 		if ("Past Hour".equals(age) || "Past Day".equals(age)) {
 			
@@ -118,9 +112,7 @@ public abstract class EarthquakeMarker extends CommonMarker
 	/**
 	 * Return the "threat circle" radius, or distance up to 
 	 * which this earthquake can affect things, for this earthquake.   
-	 * DISCLAIMER: this formula is for illustration purposes
-	 *  only and is not intended to be used for safety-critical 
-	 *  or predictive applications.
+	 *
 	 */
 	public double threatCircle() {	
 		double miles = 20.0f * Math.pow(1.8, 2*getMagnitude()-5);
