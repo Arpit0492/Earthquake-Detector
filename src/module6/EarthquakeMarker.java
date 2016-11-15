@@ -14,7 +14,7 @@ public abstract class EarthquakeMarker extends CommonMarker
 	protected boolean isOnLand;
 
 	// The radius of the Earthquake marker
-	// You will want to set this in the constructor, either
+	// We want to set this in the constructor, either
 	// using the thresholds below, or a continuous function
 	// based on magnitude. 
 	protected float radius;
