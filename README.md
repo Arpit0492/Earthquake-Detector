@@ -9,6 +9,10 @@ code for the Object Oriented Programming in Java.
 A very basic Unfolding demo you'll find in the source folder in the default package. 
 For more examples visit http://unfoldingmaps.org, or download the template with
 examples.
+
+
+
+
 •	Title of the Project : Earthquake Detecting Application
 •	Objective : To develop a software application which will detect the earthquakes around the world and showcase their strengths on                     various parameters.
 •	Hardware and Software : Eclipse IDE, Java, SQLite library, Unfolding Maps library, Processing library for Java.
