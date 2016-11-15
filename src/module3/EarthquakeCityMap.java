@@ -23,9 +23,6 @@ import parsing.ParseFeed;
 
 /** EarthquakeCityMap
  * An application with an interactive map displaying earthquake data.
- * Author: UC San Diego Intermediate Software Development MOOC team
- * @author Your name here
- * Date: July 17, 2015
  * */
 public class EarthquakeCityMap extends PApplet {
 
@@ -87,12 +84,11 @@ public class EarthquakeCityMap extends PApplet {
 	    // an int that represents the color yellow.  
 	    int yellow = color(255, 255, 0);
 	    
-	    //TODO: Add code here as appropriate
+	
 	}
 		
 	// A suggested helper method that takes in an earthquake feature and 
 	// returns a SimplePointMarker for that earthquake
-	// TODO: Implement this method and call it from setUp, if it helps
 	private SimplePointMarker createMarker(PointFeature feature)
 	{
 		// finish implementing and use this method, if it helps.
@@ -106,11 +102,4 @@ public class EarthquakeCityMap extends PApplet {
 	}
 
 
-	// helper method to draw key in GUI
-	// TODO: Implement this method to draw the key
-	private void addKey() 
-	{	
-		// Remember you can use Processing's graphics methods here
-	
-	}
 }
