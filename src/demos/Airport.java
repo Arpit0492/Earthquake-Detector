@@ -1,10 +1,6 @@
 package demos;
 
 /** A class to represent Airport data.
- * Used in module 6 of the UC San Diego MOOC Object Oriented Programming in Java
- * 
- * @author UC San Diego Intermediate Software Development MOOC team
- * 
  *
  */
 public class Airport implements Comparable<Airport> {
