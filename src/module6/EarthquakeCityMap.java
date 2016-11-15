@@ -20,22 +20,21 @@ import processing.core.PApplet;
 
 /** EarthquakeCityMap
  * An application with an interactive map displaying earthquake data.
- * Author: UC San Diego Intermediate Software Development MOOC team
- * @author Your name here
- * Date: July 17, 2015
+ * @author Arpit Johri
+ * Date: July 17, 2016
  * */
 public class EarthquakeCityMap extends PApplet {
 	
 	// We will use member variables, instead of local variables, to store the data
 	// that the setUp and draw methods will need to access (as well as other methods)
-	// You will use many of these variables, but the only one you should need to add
-	// code to modify is countryQuakes, where you will store the number of earthquakes
+	// We will use many of these variables, but the only one you should need to add
+	// code to modify is countryQuakes, where we will store the number of earthquakes
 	// per country.
 	
-	// You can ignore this.  It's to get rid of eclipse warnings
+	// It's to get rid of eclipse warnings
 	private static final long serialVersionUID = 1L;
 
-	// IF YOU ARE WORKING OFFILINE, change the value of this variable to true
+	// IF WORKING OFFILINE, change the value of this variable to true
 	private static final boolean offline = false;
 	
 	/** This is where to find the local tiles, for working without an Internet connection */
@@ -70,11 +69,11 @@ public class EarthquakeCityMap extends PApplet {
 		size(900, 700, OPENGL);
 		if (offline) {
 		    map = new UnfoldingMap(this, 200, 50, 650, 600, new MBTilesMapProvider(mbTilesString));
-		    earthquakesURL = "2.5_week.atom";  // The same feed, but saved August 7, 2015
+		    earthquakesURL = "2.5_week.atom";  // The same feed, but of different date
 		}
 		else {
 			map = new UnfoldingMap(this, 200, 50, 650, 600, new Google.GoogleMapProvider());
-			// IF YOU WANT TO TEST WITH A LOCAL FILE, uncomment the next line
+			// IF WANT TO TEST WITH A LOCAL FILE, uncomment the next line
 		    //earthquakesURL = "2.5_week.atom";
 		}
 		MapUtils.createDefaultEventDispatcher(this, map);
@@ -135,10 +134,6 @@ public class EarthquakeCityMap extends PApplet {
 		
 	}
 	
-	
-	// TODO: Add the method:
-	//   private void sortAndPrint(int numToPrint)
-	// and then call that method from setUp
 	
 	/** Event handler that gets called automatically when the 
 	 * mouse moves.
@@ -347,7 +342,7 @@ public class EarthquakeCityMap extends PApplet {
 	}
 	
 	// prints countries with number of earthquakes
-	// You will want to loop through the country markers or country features
+	// We will want to loop through the country markers or country features
 	// (either will work) and then for each country, loop through
 	// the quakes to count how many occurred in that country.
 	// Recall that the country markers have a "name" property, 
@@ -379,7 +374,6 @@ public class EarthquakeCityMap extends PApplet {
 	// helper method to test whether a given earthquake is in a given country
 	// This will also add the country property to the properties of the earthquake feature if 
 	// it's in one of the countries.
-	// You should not have to modify this code
 	private boolean isInCountry(PointFeature earthquake, Marker country) {
 		// getting location of feature
 		Location checkLoc = earthquake.getLocation();
