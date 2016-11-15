@@ -1,6 +1,5 @@
 # Earthquake-Detector
 An interactive graphical application in java 
-unfolding_app_template
 ==================================================================
 
 This is a skeleton to use Unfolding in Eclipse as well as some starter
