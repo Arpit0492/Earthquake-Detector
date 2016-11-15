@@ -220,11 +220,7 @@ public class ParseFeed {
 			}
 		}
 			
-		
 		return routes;
-		
-		
-		
 	}
 	
 	
@@ -234,9 +230,6 @@ public class ParseFeed {
 	 * the world bank.  
 	 * The file and its format can be found: 
 	 * http://data.worldbank.org/indicator/SP.DYN.LE00.IN
-	 * 
-	 * It is also included with the UC San Diego MOOC package 
-	 * in the file LifeExpectancyWorldBank.csv
 	 * 
 	 * @param p - PApplet being used
 	 * @param fileName - file name or URL for data source
@@ -257,7 +250,7 @@ public class ParseFeed {
 			// check if there is any life expectancy data from any year, get most recent
 			/*
 			 * EXTENSION: Add code to also get the year the data is from.
-			 * You may want to use a list of Floats as the  values for the HashMap
+			 * We may want to use a list of Floats as the  values for the HashMap
 			 * and store the year as the second value. (There are many other ways to do this)
 			 */
 			//
